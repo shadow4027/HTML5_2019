@@ -16,23 +16,29 @@ if (confirm("Hello player.\nThis is a game made by Jeremy Bloom,\nOptions will b
 }
 function Game() {
     var mainPath = prompt("You wake in a strange room. Padded walls and flooring. You can't seam to to move your arms. They seem to be bound in a strait jacket.\n--Struggle--\n--Look around--\n--Examine strait Jacket--").toLowerCase();
-    var deleteMe = "kljds;lfkjasd;lfkjas;dlfkjas;ldkfjas;ldkfj;asldkfj;alskdfj;laskdjf;laksdjf;lkasdjf;laksdjf;lkajsdf;lkjadf;lkjas;flkjdf;ljsdf;lkjasdf;lkjasdf;lkjasd;flk";
-    switch(mainPath) {
+    switch(mainPath){
+        
         case "s":
-            alert("You struggle but nothing happens");
-            Game();
-            break;
-        case "l":
-            switch(prompt("You look around you find:\n--Red Button--\n--Green Button--\n--Blue Button--\n Which one would you like to press?").toLocaleLowerCase()) {
-                case "r":
-                    Red();
-                    
-            }
-        default:
-            Game();
-            
-
+                alert("You struggle but nothing happens");
+                Game();
+                break;
+            case "l":
+                switch(prompt("You look around you find:\n--Red Button--\n--Green Button--\n--Blue Button--\n Which one would you like to press?").toLocaleLowerCase()) {
+                    case "r":
+                        Red();
+                        break;
+                    case "g":
+                        Green();
+                        break;
+                    case "b":
+                        Blue();
+                        break
+                    default:
+                    alert("Non Valid option");
+                }
+            default:
+                Game();
     }
-}
+    }
 
 Game();
