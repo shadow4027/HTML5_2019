@@ -6,7 +6,22 @@ this is the main js file for the text adventure
 //alert("")
 //confirm("")
 //prompt("")
+function shop(){
+    var items = {arrows: 0,
+                food:0,
+                pikachu: "15",
+                power: "over 9000",
+                };
+    debugger;
+    keyarr = Object.keys(items);
+    tempst = "you have:\n";
+    for (i in keyarr ){
+        tempst += `${keyarr[i]}: ${items[keyarr[i]]}\n`;
+    }
+    alert(tempst);
+}
 
+shop();
 var pcName = prompt("What is your name?");
 while (!confirm("do you want your name " + pcName)) {
     pcName = prompt("change your name from " + pcName + " to?");

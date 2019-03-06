@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function swapImg(elem) {
+                console.log(elem.src, " src")
+                if (elem.src.includes("cat")) {elem.src = "img/dog.jpg";}
+                else {elem.src = "img/cat.jpg";}
+                console.log(elem.src);
+            }
+        
+        </script>
+    </head>
+    <body>
+        <button onclick="swapImg(document.getElementById('image'));">Img</button>
+        <img id="image" src="" style="height: =500px; ">
+    </body>
+</html>
