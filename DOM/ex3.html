@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function alterStyle(elem, textColor, fontFam, fontSize) {
+                elem.style.color = textColor;
+                elem.style.fontFamily = fontFam;
+                elem.style.fontSize = fontSize
+            }
+        
+        </script>
+    </head>
+    <body>
+        <p id="p1">Hello</p>
+        <p id="p2">Hello</p>
+        <p id="p3">Hello</p>
+        <p id="p4">Hello</p>
+        <p id="p5">Hello</p>
+        
+        <script>
+            alterStyle(document.getElementById("p1"), "Brown", "Arial", "Smaller");
+            alterStyle(document.getElementById("p2"), "Peru", "Times New Roman", "10");
+            alterStyle(document.getElementById("p3"), "Red", "Georgia", "100px");
+            alterStyle(document.getElementById("p4"), "Pink", "Verdana", "50px");
+            alterStyle(document.getElementById("p5"), "Green", "Arial", "Larger");
+            
+        </script>
+        
+        
+        
+    </body>
+</html>
