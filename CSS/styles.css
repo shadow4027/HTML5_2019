@@ -33,5 +33,23 @@ div#circle {
     height: 100px;
     border-radius: 100%;
     position: absolute;
-    top: -500px;
+    top: 250px;
+}
+
+div#arrow {
+	border-color: blue transparent;
+	border-style: solid;
+	border-width: 0px 20px 20px 20px;
+	height: 150px;
+	width: 150px;
+}
+
+img#emil {
+    display: block;
+    width: auto;
+    height: auto;
+    border: solid 10px red;
+    border-style: dashed;
+    box-shadow: 5px 5px 4px red;
+    
 }
