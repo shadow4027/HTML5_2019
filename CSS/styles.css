@@ -51,5 +51,6 @@ img#emil {
     border: solid 10px red;
     border-style: dashed;
     box-shadow: 5px 5px 4px red;
+    border-radius: 50%;
     
 }
