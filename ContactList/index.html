@@ -87,11 +87,11 @@
           let li = document.getElementById('names').getElementsByTagName('li');
           // Loop through collection-item lis
           for(let i = 0;i < li.length;i++){
-              if (li[i][0].className == "collection-item" ) {
+              if (li[i].className == "collection-item" ) {
                   if (li[i][0].innerHTML.indexOf(filterInput) > -1) {
                       li[i][0].style.display = "";
                   }
-                  else
+                
               }
                                    
           }
